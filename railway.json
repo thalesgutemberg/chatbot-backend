@@ -5,7 +5,7 @@
     "dockerfilePath": "Dockerfile"
   },
   "deploy": {
-    "startCommand": "fastapi run --host 0.0.0.0 --port $PORT app/main.py",
+    "startCommand": "fastapi run --host 0.0.0.0 --port 8000 app/main.py",
     "healthcheckPath": "/health",
     "healthcheckTimeout": 30,
     "restartPolicyType": "ON_FAILURE"
